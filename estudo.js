@@ -39,8 +39,33 @@ function total(){
     let mes = document.getElementById("mes").value;
     let resultado = 0;
     for(let i = 1; i <= mes; i++){
-      resultado += valor * (1+(juros/100));
+      resultado = valor * (1+(juros/100));
+      valor = resultado
     }
 
-    document.write("O resultado e " + resultado);
+    document.write("O resultado e " + resultado)
 }
+ function soma(){
+    let n1 = document.getElementById("n1").value;
+    let n2 = document.getElementById("n2").value;
+    let n3 = document.getElementById("n3").value;
+    let r = Number(n1) + Number(n2) + Number(n3);
+    document.getElementById("resultado").innerHTML = r;
+
+ }
+
+function media(){
+        let n1 = document.getElementById("n1").value;
+        let n2 = document.getElementById("n2").value;
+        let n3 = document.getElementById("n3").value;
+        let r = (Number(n1) + Number(n2) + Number(n3)) / 3;
+        document.getElementById("resultado").innerHTML = r;
+ }
+ function falta(){
+    let n1 = document.getElementById("n1").value;
+    let n2 = document.getElementById("n2").value;
+    let n3 = document.getElementById("n3").value;
+    let r = Number(n1) + Number(n2) + Number(n3); -180
+    document.getElementById("resultado").innerHTML = r;
+ }
+ 
