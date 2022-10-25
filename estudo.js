@@ -31,6 +31,11 @@ function quadrado() {
         document.write("O Quadrado de " + i + " é " + (i * i) + "<br>")
     }
 }
+ function moeda (atual){
+    atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+
+ }
+
 function total() {
     let valor = document.getElementById("val").value;
     let juros = document.getElementById("ju").value;
@@ -58,17 +63,14 @@ function total() {
     for (let i = 1; i <= mes; i++) {
         resultado = valor * (1 + (juros / 100));
         valor = resultado;
+        texto += "mes" + i + "valor"
+        document.getElementById("resultado").innerHTML = "Total. " + moeda (resultado)
+        //document.write("Mes" + i + " valor:" + moeda(resultado) + "<br>");
     }
+    document.getElementById("resultado").innerHTML = "Total. " + moeda (resultado)
+    //document.write("O Resultado é " + resultado);
 
-    document.write("O Resultado é " + resultado);
-}
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
+    }
 
 
 
