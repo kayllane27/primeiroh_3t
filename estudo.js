@@ -70,23 +70,3 @@ function total() {
     document.getElementById("resultado").innerHTML = "Total: " + moeda(resultado);
     //document.write( "O Resultado é " + moeda(resultado) );
 }
-
-    function  calculeRaiz(){
-        let a = document.getElementById("a").value;
-        let b = document.getElementById("b").value;
-        let c = document.getElementById("c").value;
-        let delta = (b*b) - 4*a*c
-
-        if(delta < 0){
-        
-        }
-        else if (delta == 0){
-
-        } else {
-
-        }
-
-     }
-
-
-
